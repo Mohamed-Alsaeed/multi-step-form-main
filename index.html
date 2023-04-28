@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Multi-step form" />
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Frontend Mentor | Multi-step form</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<div>
+					<div id="circle1" class="circle_active">1</div>
+					<div>
+						<h1>Step 1</h1>
+						<p>Your info</p>
+					</div>
+				</div>
+				<div>
+					<div id="circle2">2</div>
+					<div>
+						<h1>Step 2</h1>
+						<p>Select plan</p>
+					</div>
+				</div>
+				<div>
+					<div id="circle3">3</div>
+					<div>
+						<h1>Step 3</h1>
+						<p>Add-ons</p>
+					</div>
+				</div>
+				<div>
+					<div id="circle4">4</div>
+					<div>
+						<h1>Step 4</h1>
+						<p>Summary</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<section id="step1">
+					<h1>Personal info</h1>
+					<p>Please provide your name, email address, and phone number.</p>
+					<form method="post">
+						<label for="Name">Name</label>
+						<input type="text" id="Name" placeholder="e.g. Stephen King" required />
+						<label for="email">Email Address</label>
+						<input type="email" id="email" placeholder="e.g. stephenking@lorem.com" required />
+						<label for="phone">Phone Number</label>
+						<input type="" id="phone" placeholder="e.g. +1 234 567 890" required />
+					</form>
+					<button id="next1">Next Step</button>
+				</section>
+				<section id="step2">
+					<h1>Select your plan</h1>
+					<p>You have the option of monthly or yearly billing.</p>
+					<div>
+						<div id="arcade">
+							<img src="images/icon-arcade.svg" alt="arcade" />
+							<h2>Arcade</h2>
+							<p id="arcadeYear">$9/mo</p>
+							<p class="step2p">2 months free</p>
+						</div>
+						<div id="advanced">
+							<img src="images/icon-advanced.svg" alt="advanced" />
+							<h2>Advanced</h2>
+							<p id="advancedYear">$12/mo</p>
+							<p class="step2p">2 months free</p>
+						</div>
+						<div id="pro">
+							<img src="images/icon-pro.svg" alt="pro" />
+							<h2>Pro</h2>
+							<p id="proYear">$15/mo</p>
+							<p class="step2p">2 months free</p>
+						</div>
+					</div>
+					<div>
+						<span id="month">Monthly</span>
+						<div id="month_year_step2">
+							<p id="p"></p>
+						</div>
+						<span id="year">Yearly</span>
+					</div>
+					<div>
+						<button id="back2">Go Back</button>
+						<button id="next2">Next Step</button>
+					</div>
+				</section>
+				<section id="step3">
+					<h1>Pick add-ons</h1>
+					<p>Add-ons help enhance your gaming experience.</p>
+					<div id="onlineServiceDiv">
+						<input type="checkbox" id="Online_Service" />
+						<label for="Online_Service">
+							<h2>Online service</h2>
+							<p>Access to multiplayer games</p>
+						</label>
+						<p id="onlineServiceCost">+$1/mo</p>
+					</div>
+					<div id="largerStorageDiv">
+						<input type="checkbox" id="Larger_storage" />
+						<label for="Larger_storage">
+							<h2>Larger storage</h2>
+							<p>Extra 1TB of cloud save</p>
+						</label>
+						<p id="largerStorageCost">+$2/mo</p>
+					</div>
+					<div id="customizableProfileDiv">
+						<input type="checkbox" id="Customizable_Profile" />
+						<label for="Customizable_Profile">
+							<h2>Customizable Profile</h2>
+							<p>Custom theme on your profile</p>
+						</label>
+						<p id="customizableProfileCost">+$2/mo</p>
+					</div>
+					<div>
+						<button id="back3">Go Back</button>
+						<button id="next3">Next Step</button>
+					</div>
+				</section>
+				<section id="step4">
+					<h1>Finishing up</h1>
+					<p>Double-check everything looks OK before confirming.</p>
+					<div>
+						<div>
+							<div>
+								<h1 id="step2_choosen"></h1>
+								<p id="change_step2">Change</p>
+							</div>
+							<p id="step4cost"></p>
+						</div>
+						<div id="step3_choosen1">
+							<p>Online service</p>
+							<p id="choosen1_value">+$1/mo</p>
+						</div>
+						<div id="step3_choosen2">
+							<p>Larger Storage</p>
+							<p id="choosen2_value">+$2/mo</p>
+						</div>
+						<div id="step3_choosen3">
+							<p>Customizable Profile</p>
+							<p id="choosen3_value">+$2/mo</p>
+						</div>
+					</div>
+					<div>
+						<p>Total (per <span id="month_year_step4"> </span>)</p>
+						<p id="step4totalcost">555</p>
+					</div>
+					<div>
+						<button id="back4">Go Back</button>
+						<button id="next4">Confirm</button>
+					</div>
+				</section>
+				<section id="step5">
+					<img src="images/icon-thank-you.svg" alt="thank-you" />
+					<h1>Thank you!</h1>
+					<p>
+						Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us
+						at support@loremgaming.com.
+					</p>
+				</section>
+			</section>
+		</main>
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>Coded by <a href="#">Mohamed Alsaeed </a>
+			</div>
+		</footer>
+		<script src="main.js"></script>
+	</body>
+</html>
